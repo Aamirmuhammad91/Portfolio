@@ -7,7 +7,7 @@
   color: $mainColor;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   transition: all 1s ease;
 
   .wrapper {
@@ -60,23 +60,23 @@
       transition: all 2s ease;
     }
   }
-}
-.active {
-  background-color: $mainColor;
-  color: white;
-  .right {
-    .hamburger {
-      span {
-        &:first-child {
-          background-color: white;
-          transform: rotate(45deg);
-        }
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        &:last-child {
-          background-color: white;
-          transform: rotate(-45deg);
+  &.active {
+    background-color: $mainColor;
+    color: white;
+    .right {
+      .hamburger {
+        span {
+          &:first-child {
+            background-color: white;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            background-color: white;
+            transform: rotate(-45deg);
+          }
         }
       }
     }
