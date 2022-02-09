@@ -14,23 +14,26 @@ export default function Works() {
     {
       id: '1',
       icon: './assets/mobile.png',
-      title: 'Web Design',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-      img: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930',
+      title: 'Flexbox Project',
+      desc: 'A small project in done making use of HTML, CSS and Flexbox ',
+      img: './assets/flexbox.PNG',
+      repo: 'https://github.com/Aamirmuhammad91/Flexbox-Project',
     },
     {
       id: '2',
       icon: './assets/globe.png',
-      title: 'Mobile Application',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      img: 'https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg',
+      title: 'Master Thesis',
+      desc: 'This is a link to my Master Thesis Work',
+      img: './assets/F1271086-01.jpg',
+      repo: 'https://github.com/Aamirmuhammad91/Final-Thesis',
     },
     {
       id: '3',
       icon: './assets/writing.png',
-      title: 'Branding',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      img: 'https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg',
+      title: 'JavaScript Projects',
+      desc: 'Repository with all JavaScript Project.',
+      img: './assets/menu.PNG',
+      repo: 'https://github.com/Aamirmuhammad91/JavaScript-Projects',
     },
   ];
   return (
@@ -49,7 +52,13 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <a
+                    href={d.repo}
+                    target='_blank'
+                    rel='flexbox project repository'
+                  >
+                    {d.title}
+                  </a>
                 </div>
               </div>
               <div className='right'>
